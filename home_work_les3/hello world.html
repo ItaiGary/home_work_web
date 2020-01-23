@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Document</title>
+</head>
+<style>
+    header {
+        min-height: 30px;
+        width: auto;
+        background-color: black;
+        color: blanchedalmond;
+    }
+
+    .container {
+        min-width: 1000px;
+        min-height: inherit;
+    }
+    .buttons{
+        min-height: 60px;
+        border-radius: 25px 25px 25px 25px;
+-moz-border-radius: 25px 25px 25px 25px;
+-webkit-border-radius: 25px 25px 25px 25px;
+border: 7px solid #9e089e;
+background-color: #fa2a65;
+    }
+</style>
+<script>
+    function userName() {
+        //      id_name_h2.text = id_name_input.text
+        id_i_name.innerHTML = id_name_input.value;
+    }
+</script>
+
+<body>
+    <header class="container-fluid py-4">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="row align-items-center">
+                <div><h2 id="id_name_h2">hey there <span id=id_i_name> your name </span>!</h2>
+            </div>
+                <input id="id_name_input" type="text" oninput="userName()">
+                <input id="id_password_input" type="text">
+                <button class="btn btn-success">log in</button>
+        </div>
+    </div>
+    </div>
+    </header>
+    <main class="main_container_fluid">
+        <div class="container">
+            <h1>Hello World</h1>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto numquam obcaecati rem? At hic non inventore. Saepe
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore sapiente fugit assumenda! Deserunt aliquam fuga quam totam veritatis commodi provident, facere recusandae impedit vel voluptates dolore dolorum, et deleniti magni!
+            </p>
+            <button class = "buttons">
+                Learn More <i class="fa fa-ravelry" aria-hidden="true"></i>
+            </button>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
